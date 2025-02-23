@@ -1,142 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MacBook Air</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- navegacion del menu -->
     <header>
-        <nav aria-label="menu principal">
-            <!-- logo de la empresa -->
-            <div>
-                <a href="./index.html" aria-label="Ir a la pagina inicio">
-                    <p>Macbook Pro</p>
-                </a>
-            </div>
-            <!-- Elementos del menu -->
-            <ul>
-                <li><a href="#features" aria-current="page">Caracteristicas</a></li>
-                <li><a href="#shipping-method">Envios</a></li>
-                <li><a href="#payment-methods">Pagos</a></li>
-                <li><a href="mailto:sebas00tiam@gmail.com">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Contenido principal -->
-    <main>
-        <section id="hero" aria-label="hero-title">
-            <img 
-                id="hero-image" 
-                src="./img/macbook-pro.jpg" 
-                alt="Imagen de Macbook Pro"
-            >
-            <h1 id="hero-title">Macbook Pro</h1>
-            <div>
-                <p>El portatil mas potente de Apple</p>
-                <p>Rendimiento gráfico de primer nivel</p>
-                <p>Todo juega a tu favor.</p>
-            </div>
-        </section>
-        <!-- Seccion de caracteristicas -->
-        <section id="features">
-            <div>
-                <h3>Potencia de sobra</h3>
-                <p>
-                    La línea de chips M4 ofrece una velocidad y un desempeño casi imposibles.
-                </p>
-                <img 
-                    src="./img/performance.jpg" 
-                    alt="procesador que lleva los Macbook pro">
-            </div>
-            <div>
-                <h3>Larga duración de batería</h3>
-                <p>
-                    Todos los modelos mantienen su gran rendimiento estén o no conectados a la corriente.
-                </p>
-                <img 
-                    src="./img/battery.jpg" 
-                    alt="Hombre usando una macbook al aire libre">
-            </div>
-            <div>
-                <h3>macOS</h3>
-                <p>
-                    Hay miles de apps optimizadas para sacarle partido al potencial de macOS.
-                </p>
-                <img 
-                    src="./img/macos-development.jpg" 
-                    alt="Programando en la macbook pro">
-            </div>
-        </section>
-        <!-- Opciones de envios -->
-        <section id="shipping-method">
-            <h2>Opciones de envío</h2>
-            <p>Te ofrecemos diversas opciones de entrega para que recibas tu MacBook Pro de la forma más conveniente:</p>
-            <div>
-                <label class="shipping-option">
-                    <input type="radio" name="shipping" checked><strong>Envío estándar (Gratis)</strong> - Recíbelo en 5-7 días hábiles.
-                    <span>10 PEN.</span>
-                </label>
-                <label class="shipping-option">
-                    <input type="radio" name="shipping"><strong>Envío express</strong> - Entrega en 2-3 días hábiles por un costo adicional.
-                    <span>10 PEN.</span>
-                </label>
-                <label class="shipping-option">
-                    <input type="radio" name="shipping"><strong>Recogida en tienda</strong> - Disponible en tiendas seleccionadas sin costo adicional. 
-                    <span>10 PEN.</span>
-                </label>
-            </div>
-            <button class="continue-button">Continuar</button>
-        </section>
-        <!-- Metodos de pagos -->
-        <section id="payment-methods">
-            <h2>Métodos de Pago</h2>
-            <p>Aceptamos diferentes formas de pago para tu comodidad:</p>
-            <ul class="payment">
-                <li>
-                    <button class="payment-option" onclick="selectOption(this)" aria-label="Pagar con tarjeta de débito o crédito">
-                        <img src="./icons/visa.svg" alt="Ícono de tarjeta de crédito o débito">
-                        Tarjeta débito o crédito
-                    </button>
-                </li>
-                <li>
-                    <button class="payment-option" aria-label="Pagar con transferencia bancaria">
-                        <img src="./icons/transferencia-bancaria.png" alt="Ícono de transferencia bancaria">
-                        Transferencia bancaria
-                    </button>
-                </li>
-                <li>
-                    <button class="payment-option" aria-label="Pagar con monedero virtual">
-                        <img src="./icons/yape.png" alt="Ícono de monedero virtual">
-                        Monedero virtual
-                    </button>
-                </li>
-                <li>
-                    <button class="payment-option" aria-label="Pagar en efectivo">
-                        <img src="./icons/pago-efectivo.png" alt="Ícono de pago en efectivo">
-                        Pago en efectivo
-                    </button>
-                </li>
-            </ul>
-            <button class="continue-button">Comprar</button>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <p>&copy; 2023 Macbook Pro.</p>
-            <nav class="nav-footer" aria-label="Enlaces de redes sociales">
+        <div class="header-container">
+            <h1>MacBook Air</h1>
+            <nav>
                 <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><img src="./icons/facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><img src="./icons/instagram.svg" alt="Instagram"></a></li>
-                    <li><a href="https://github.com/dandfres" target="_blank" aria-label="Github"><img src="./icons/github.svg" alt="Twitter"></a></li>
+                    <li><a class="nav-item" href="">Descripción</a></li>
+                    <li><a class="nav-item" href="">Especificaciones</a></li>
+                    <li><a class="nav-item" href="">Métodos de compra</a></li>
+                    <li><a class="nav-item" href="">Tiendas</a></li>
                 </ul>
+                <button class="btn primary large">Comprar</button></a>
             </nav>
         </div>
-    </footer>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <img src="./img/hero-static.jpg" alt="laptop-image">
+                <div class="description">
+                    <h2 class="head-primary head-large head-style">Superligera. Superchip M3.</h2>
+                    <p class="text-primary text-large">La <span>MacBook Air</span> es la compañera ideal para trabajar y divertirse al máximo. Con la llegada del <span>chip M3</span>, la laptop más popular del mundo es capaz de hacer cosas aún más increíbles. Y como ofrece hasta 18 horas de batería<sup>2</sup>, puede arrasar con cualquier tarea en cualquier lugar.</p>
+                </div>
+            </section>
+            <section class="specs">
+                <h2 class="head-primary head-large head-style">Especificaciones</h2>
+                <div class="card-specs">
+                    <div>
+                        <h3 class="name-specs">Acabado</h3>
+                    </div>
+                    <div class="card-container">
+                        <div class="size-selector">
+                            <div class="size-option">13 pulgadas</div>
+                            <div class="size-option">15 pulgadas</div>
+                        </div>
+                        <div class="laptop-display">
+                            <img src="./img/large-hero-screen-size.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="specs-card">
+                    <h3>Acabado</h3>
+                </div>
+                <div class="specs-card">
+                    <h3>Chip</h3>
+                </div>
+                <div class="specs-card">
+                    <h3>Pantalla</h3>
+                </div>
+                <div class="specs-card">
+                    <h3>Memoria</h3>
+                </div>
+                <div class="specs-card">
+                    <h3>Batería y energía</h3>
+                </div>
+                <div class="specs-card">
+                    <h3>Amacemiento</h3>
+                </div>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>
