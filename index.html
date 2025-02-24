@@ -10,69 +10,151 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="header-container">
             <h1>MacBook Air</h1>
             <nav>
                 <ul>
-                    <li><a class="nav-item" href="">Descripción</a></li>
-                    <li><a class="nav-item" href="">Especificaciones</a></li>
-                    <li><a class="nav-item" href="">Métodos de compra</a></li>
-                    <li><a class="nav-item" href="">Tiendas</a></li>
+                    <li><a class="nav-item" href="#hero">Descripción</a></li>
+                    <li><a class="nav-item" href="#specs">Especificaciones</a></li>
+                    <li><a class="nav-item" href="#where-to-buy">Dónde comprar</a></li>
                 </ul>
-                <button class="btn primary large">Comprar</button></a>
+                <a class="btn primary large" href="https://pe.tiendasishop.com/products/macbook-air-13-chip-m2-ram-16gb-256gb-gris-espacial" target="_blank">Comprar</a>
             </nav>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main>
         <div class="container">
-            <section class="hero">
-                <img src="./img/hero-static.jpg" alt="laptop-image">
+            <!-- Hero Section -->
+            <section id="hero" class="hero">
+                <img src="./img/hero-static.jpg" alt="Imagen de MacBook Air">
                 <div class="description">
-                    <h2 class="head-primary head-large head-style">Superligera. Superchip M3.</h2>
-                    <p class="text-primary text-large">La <span>MacBook Air</span> es la compañera ideal para trabajar y divertirse al máximo. Con la llegada del <span>chip M3</span>, la laptop más popular del mundo es capaz de hacer cosas aún más increíbles. Y como ofrece hasta 18 horas de batería<sup>2</sup>, puede arrasar con cualquier tarea en cualquier lugar.</p>
+                    <h2 class="head-style">Superligera. Superchip M3.</h2>
+                    <p class="text-description">La <span>MacBook Air</span> es la compañera ideal para trabajar y divertirse al máximo. Con la llegada del <span>chip M3</span>, la laptop más popular del mundo es capaz de hacer cosas aún más increíbles. Y como ofrece hasta 18 horas de batería<sup>2</sup>, puede arrasar con cualquier tarea en cualquier lugar.</p>
                 </div>
             </section>
-            <section class="specs">
-                <h2 class="head-primary head-large head-style">Especificaciones</h2>
+
+            <!-- Specifications Section -->
+            <section id="specs" class="specs">
+                <h2 class="head-style">Especificaciones</h2>
                 <div class="card-specs">
-                    <div>
-                        <h3 class="name-specs">Acabado</h3>
-                    </div>
+                    <h3 class="name-specs">Tamaño</h3>
                     <div class="card-container">
                         <div class="size-selector">
-                            <div class="size-option">13 pulgadas</div>
-                            <div class="size-option">15 pulgadas</div>
+                            <button class="size-option" id="size-13">13 pulgadas</button>
+                            <button class="size-option" id="size-15">15 pulgadas</button>
                         </div>
                         <div class="laptop-display">
-                            <img src="./img/large-hero-screen-size.jpg" alt="">
+                            <img id="product-image" src="./img/large-hero-screen-size.jpg" alt="Tamaño de pantalla">
                         </div>
                     </div>
                 </div>
-                <div class="specs-card">
-                    <h3>Acabado</h3>
+                <div class="card-specs">
+                    <h3 class="name-specs">Acabado</h3>
+                    <div class="card-container">
+                        <img src="./img/large-color-option.jpg" alt="Colores de MacBook">
+                        <div class="options">
+                            <p class="text-style">Color plata</p>
+                            <p class="text-style">Blanco estelar</p>
+                            <p class="text-style">Gris medianoche</p>
+                            <p class="text-style">Medianoche</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="specs-card">
-                    <h3>Chip</h3>
+                <div class="card-specs">
+                    <h3 class="name-specs">Pantalla</h3>
+                    <div class="card-container">
+                        <h4>Pantalla Liquid Retina</h4>
+                        <p class="text-style">Pantalla de 13.6 pulgadas (diagonal); resolución nativa de 2560 x 1664</p>
+                        <p class="text-style">Brillo de 500 nits</p>
+                        <h4>Colores</h4>
+                        <p class="text-style">Compatible con 1,000 millones de colores</p>
+                        <p class="text-style">Amplia gama de colores (P3)</p>
+                        <p class="text-style">Tecnología True Tone</p>
+                        <img src="./img/large-screen.jpg" alt="Pantalla de MacBook">
+                    </div>
                 </div>
-                <div class="specs-card">
-                    <h3>Pantalla</h3>
-                </div>
-                <div class="specs-card">
-                    <h3>Memoria</h3>
-                </div>
-                <div class="specs-card">
-                    <h3>Batería y energía</h3>
-                </div>
-                <div class="specs-card">
-                    <h3>Amacemiento</h3>
+                <div class="card-specs">
+                    <h3 class="name-specs">Memoria y Almacenamiento</h3>
+                    <div class="options">
+                        <div>
+                            <p class="text-style">SSD de 256GB</p>
+                            <p class="text-style">Configurable con: 512GB, 1TB o 2TB</p>
+                        </div>
+                        <div>
+                            <p class="text-style">SSD de 512GB</p>
+                            <p class="text-style">Configurable con: 1TB o 2TB</p>
+                        </div>
+                        <div>
+                            <p class="text-style">16GB de memoria unificada</p>
+                            <p class="text-style">Configurable con: 24GB</p>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section>
-                <h2></h2>
+
+            <!-- Where to Buy Section -->
+            <section id="where-to-buy">
+                <div class="card-specs">
+                    <h3 class="name-specs">Elige tu país</h3>
+                    <div class="select-country">
+                        <div class="country-row">
+                            <a class="country" href="https://locate.apple.com/ar/es/" target="_blank">Argentina</a>
+                            <a class="country" href="https://locate.apple.com/lac/en" target="_blank">Aruba</a>
+                            <a class="country" href="https://locate.apple.com/bs/en/" target="_blank">Bahamas</a>
+                            <a class="country" href="https://locate.apple.com/bz/en/" target="_blank">Belice</a>
+                            <a class="country" href="https://locate.apple.com/bo/es/" target="_blank">Bolivia</a>
+                            <a class="country" href="https://locate.apple.com/br/pt/" target="_blank">Brasil</a>
+                            <a class="country" href="https://locate.apple.com/bm/en/" target="_blank">Bermudas</a>
+                            <a class="country" href="https://locate.apple.com/cl/es/" target="_blank">Chile</a>
+                            <a class="country" href="https://locate.apple.com/co/es/" target="_blank">Colombia</a>
+                            <a class="country" href="https://locate.apple.com/cr/es/" target="_blank">Costa Rica</a>
+                        </div>
+                        <div class="country-row">
+                            <a class="country" href="https://locate.apple.com/ec/es/" target="_blank">Ecuador</a>
+                            <a class="country" href="https://locate.apple.com/sv/es/" target="_blank">El Salvador</a>
+                            <a class="country" href="https://locate.apple.com/us/en/" target="_blank">Estados Unidos</a>
+                            <a class="country" href="https://locate.apple.com/gd/en/" target="_blank">Granada</a>
+                            <a class="country" href="https://locate.apple.com/gt/es/" target="_blank">Guatemala</a>
+                            <a class="country" href="https://locate.apple.com/hn/es/" target="_blank">Honduras</a>
+                            <a class="country" href="https://locate.apple.com/ht/en" target="_blank">Haití</a>
+                            <a class="country" href="https://locate.apple.com/jm/en/" target="_blank">Jamaica</a>
+                            <a class="country" href="https://locate.apple.com/ky/en/" target="_blank">Islas Caimán</a>
+                            <a class="country" href="https://locate.apple.com/mx/es/" target="_blank">México</a>
+                        </div>
+                        <div class="country-row">
+                            <a class="country" href="https://locate.apple.com/ni/es/" target="_blank">Nicaragua</a>
+                            <a class="country" href="https://locate.apple.com/pa/es/" target="_blank">Panamá</a>
+                            <a class="country" href="https://locate.apple.com/py/es/" target="_blank">Paraguay</a>
+                            <a class="country" href="https://locate.apple.com/pe/es/" target="_blank">Perú</a>
+                            <a class="country" href="https://locate.apple.com/pr/en/" target="_blank">Puerto Rico (English)</a>
+                            <a class="country" href="https://locate.apple.com/pr/es/" target="_blank">Puerto Rico (Español)</a>
+                            <a class="country" href="https://locate.apple.com/do/es/" target="_blank">República Dominicana</a>
+                            <a class="country" href="https://locate.apple.com/tt/en/" target="_blank">Trinidad y Tobago</a>
+                            <a class="country" href="https://locate.apple.com/uy/es/" target="_blank">Uruguay</a>
+                            <a class="country" href="https://locate.apple.com/ve/es/" target="_blank">Venezuela</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Apple</h3>
+                <p class="footer-description">Este sitio web fue diseñado a modo de práctica con fines académicos, inspirado en la página de Apple.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright© 2025 Apple Inc. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,37 +1,40 @@
-/* normalizar la pagina */
+/* Normalize */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Remover estilos de lista */
+/* Remove list styles */
 ul, ol {
   list-style: none;
 }
 
-/* Remover el subrayado y color */
+/* Remove link underline and inherit color */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Root variables */
 :root {
-  --background: #F5F5F7;   /* Fondo claro, estilo Apple */
-  --text-color: #1D1D1F;   /* Texto oscuro, fácil de leer */
-  --primary-color: #0071E3; /* Azul Apple, usado en botones */
-  --secondary-color: #A2AAAD; /* Gris elegante */
+  --background: #F5F5F7;   /* Light background, Apple style */
+  --text-color: #1D1D1F;   /* Dark text, easy to read */
+  --primary-color: #0071E3; /* Apple blue, used in buttons */
+  --secondary-color: #A2AAAD; /* Elegant gray */
 }
 
+/* Body styles */
 body {
   background-color: #fff;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
 }
 
+/* Header styles */
 header {
   border-bottom: 1px solid var(--secondary-color);
   background-color: var(--background);
-  padding: 0 30px 0;
+  padding: 0 30px;
   position: sticky;
   top: 0;
   display: flex;
@@ -62,7 +65,7 @@ header {
 .header-container nav ul {
   display: flex;
   gap: 20px;
-  padding: 15px 20px 15px;
+  padding: 15px 20px;
   flex-wrap: wrap;
 }
 
@@ -79,12 +82,16 @@ header {
   border: none;
   border-radius: 16px;
   padding: 4px 8px;
+  background-color: var(--primary-color);
+  color: var(--background);
+  font-size: 12px;
 }
 
 .btn:hover {
   background-color: #0b75e0;
 }
 
+/* Main content styles */
 main {
   width: 100%;
   display: flex;
@@ -94,14 +101,10 @@ main {
 
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
-.primary {
-  background-color: #0071E3;
-  color: #f5f5f5;
-}
-
+/* Hero section styles */
 .hero img {
   margin: 90px auto;
   width: 100%;
@@ -111,30 +114,30 @@ span {
   color: var(--text-color);
 }
 
-.head-large {
+.head-style {
   font-size: 76px;
   font-weight: 600;
+  margin: 40px auto;
 }
 
-.head-style {
-  margin: 20px auto 40px;
+.text-style {
+  font-size: 18px;
 }
 
-.text-large {
+.text-description {
   font-size: 28px;
-  font-weight: 700;
-}
-
-.text-primary {
   color: rgb(155, 155, 155);
+  font-weight: 700;
+  word-wrap: break-word;
 }
 
-
+/* Specs section styles */
 .card-specs {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid var(--secondary-color);
   padding: 40px;
+  margin: 20px 0;
 }
 
 .name-specs {
@@ -150,15 +153,99 @@ span {
 }
 
 .size-option {
-  border: 2px solid var(--secondary-color);
-  border-radius: 4px;
+  border: 2px solid transparent;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   padding: 20px 28px;
+  background-color: #fff;
+}
+
+.size-option.selected {
+  border-color: var(--primary-color); /* Cambia el color según tu preferencia */
 }
 
 .laptop-display {
   display: flex;
   justify-content: center;
   padding: 24px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.card-container img {
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+/* Country selection styles */
+.select-country {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.country-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.country {
+  color: var(--primary-color);
+  font-size: large;
+}
+
+.country:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 0 20px;
+  margin-top: 32px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-description {
+  color: #b3b3b3;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+  color: #b3b3b3;
+  font-size: 0.9rem;
 }
