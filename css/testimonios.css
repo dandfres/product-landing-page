@@ -1,0 +1,152 @@
+/* Normalize */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  /* Remove list styles */
+ul, ol {
+    list-style: none;
+}
+
+  /* Remove link underline and inherit color */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Paleta de colores */
+:root {
+    --background: #F5F5F7;   /* Light background, Apple style */
+    --text-color: #1D1D1F;   /* Dark text, easy to read */
+    --primary-color: #0071E3; /* Apple blue, used in buttons */
+    --secondary-color: #A2AAAD; /* Elegant gray */
+}
+
+/* === Mobile version === */
+body {
+    background-color: #fff;
+    font-family: "Inter";
+    color: var(--text-color);
+}
+
+header {
+    align-items: center;
+    background-color: var(--background);
+    border-bottom: 1px solid #cdd7db;
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-btn > img {
+    width: 24px;
+    transform: translate(0, 4px);
+}
+
+.buy-btn {
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    color: var(--background);
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.buy-btn:hover {
+    background-color: #0077ee;
+}
+
+aside {
+    padding: 0px 12px;
+    font-size: 14px;
+    display: none;
+}
+
+.sidebar-container {
+    padding: 24px 16px;
+}
+
+
+/* contenido del main */
+main {
+    padding: 0 40px;
+}
+
+h2 {
+    margin-top: 70px;
+}
+
+#section {
+    margin-top: 30px;
+}
+
+.card {
+    background-color: var(--background);
+    box-shadow: 0 0 10px #00000032;
+    border-radius: 16px;
+    padding: 30px 24px;
+}
+
+.user-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+.user-information img {
+    width: 48px;
+}
+
+.comment {
+    margin-top: 12px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 0 300px;
+    }
+
+    main {
+        padding: 0 300px;
+    }
+
+    #main h2 {
+        font-size: 70px;
+    }
+
+    #section {
+        display: grid;
+        gap: 50px;  
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "card1 card2 card3"
+            "card3 card4 card3"
+            "card7 card6 card9";
+    }
+
+    .card {
+        font-size: 28px;
+    }
+}
